@@ -1,0 +1,48 @@
+---
+import '../styles/global.css';
+const name = "Dinara Denis";
+const userName = "// Player 1: Deenara";
+const title = "Deenara's webpage"
+const desc = "A student who tries to make random apps, websites, and very simplistic games. Very nerdy with computers, its hardware and software tho.";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/Deenara.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<title>{title}</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+	</head>
+	
+	<body class="bg-zinc-950 text-zinc-100 flex min-h-screen flex-col justify-between p-8 sm:p-16 items-center text-center selection:bg-blue-500 selection:text-black overflow-hidden relative">
+		
+		<div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-500/10 pointer-events-none z-0"></div>
+
+		<header class="z-10">
+			<span class="text-xs font-mono tracking-widest text-zinc-500 uppercase">// casual_mode</span>
+		</header>
+
+		<main class="max-w-3xl my-auto space-y-6 z-10">
+			<h1 class="text-5xl font-black tracking-tight text-white sm:text-7xl md:text-8xl transition-all">
+				{name}
+			</h1>
+			<p class="text-xs font-semibold tracking-widest text-blue-500 uppercase">
+				{userName}
+			</p>
+			<p class="text-lg text-zinc-400 leading-relaxed sm:text-xl md:text-2xl font-light max-w-2xl mx-auto">
+				{desc}
+			</p>
+		</main>
+
+		<footer class="flex flex-wrap justify-center gap-6 text-sm font-medium text-zinc-500 z-10">
+			<a href="mailto:denisdinara27@gmail.com" class="hover:text-blue-500 transition-colors duration-200">Email</a>
+			<span class="text-zinc-800">|</span>
+			<a href="https://github.com/dinaradenis" class="hover:text-blue-500 transition-colors duration-200">GitHub</a>
+		</footer>
+		
+	</body>
+</html>
