@@ -2,7 +2,7 @@ version: 2
 
 updates:
   # npm dependencies: first day of every month
-    - package-ecosystem: "npm"
+  - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "monthly"
