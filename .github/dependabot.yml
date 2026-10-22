@@ -2,13 +2,20 @@ version: 2
 
 updates:
   # npm dependencies: first day of every month
-  - package-ecosystem: "npm"
+    - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "monthly"
       time: "03:00"
       timezone: "Asia/Jakarta"
+
+    ignore:
+      - dependency-name: "typescript"
+        update-types:
+          - "version-update:semver-major"
+
     open-pull-requests-limit: 10
+
     groups:
       npm-non-major:
         applies-to: version-updates
