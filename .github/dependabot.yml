@@ -1,0 +1,36 @@
+version: 2
+
+updates:
+  # npm dependencies: first day of every month
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+      time: "03:00"
+      timezone: "Asia/Jakarta"
+    open-pull-requests-limit: 10
+    groups:
+      npm-non-major:
+        applies-to: version-updates
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # GitHub Actions versions: monthly
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+      time: "03:30"
+      timezone: "Asia/Jakarta"
+    open-pull-requests-limit: 10
+    groups:
+      actions-non-major:
+        applies-to: version-updates
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
